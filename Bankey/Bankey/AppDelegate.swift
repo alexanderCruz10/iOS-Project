@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         loginViewController.delegate = self
         onBoardingContainerViewController.delegate = self
         dummyViewController.logoutDelegate = self
-        window?.rootViewController = mainViewController //loginViewController
+        window?.rootViewController = AccountSummaryViewController() //mainViewController //loginViewController
         
         return true
     }
