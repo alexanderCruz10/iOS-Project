@@ -44,6 +44,7 @@ extension LoginView {
         passwordTF.placeholder = "Password"
         passwordTF.isSecureTextEntry = true
         passwordTF.delegate = self
+        passwordTF.enablePasswordToggle()
                 
         layer.cornerRadius = 5
         clipsToBounds = true
