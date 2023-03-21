@@ -22,6 +22,8 @@
 		35754AF229BB2557004D3F21 /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35754AF129BB2557004D3F21 /* AccountTests.swift */; };
 		35754AF429C97404004D3F21 /* SkeletonLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35754AF329C97404004D3F21 /* SkeletonLoadable.swift */; };
 		35754AF629C97498004D3F21 /* SkeletonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35754AF529C97498004D3F21 /* SkeletonCell.swift */; };
+		35754AF929C99CFB004D3F21 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35754AF829C99CFB004D3F21 /* ProfileManager.swift */; };
+		35754AFB29C9A429004D3F21 /* AccountSummaryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35754AFA29C9A429004D3F21 /* AccountSummaryViewControllerTests.swift */; };
 		35F24B0329978C400038766F /* DecimalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F24B0229978C400038766F /* DecimalUtils.swift */; };
 		35F24B0529978C800038766F /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F24B0429978C800038766F /* CurrencyFormatter.swift */; };
 		35F68E3A28EB911200CBED6B /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F68E3928EB911200CBED6B /* OnboardingContainerViewController.swift */; };
@@ -65,6 +67,8 @@
 		35754AF129BB2557004D3F21 /* AccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTests.swift; sourceTree = "<group>"; };
 		35754AF329C97404004D3F21 /* SkeletonLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonLoadable.swift; sourceTree = "<group>"; };
 		35754AF529C97498004D3F21 /* SkeletonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonCell.swift; sourceTree = "<group>"; };
+		35754AF829C99CFB004D3F21 /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		35754AFA29C9A429004D3F21 /* AccountSummaryViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewControllerTests.swift; sourceTree = "<group>"; };
 		35F24B0229978C400038766F /* DecimalUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalUtils.swift; sourceTree = "<group>"; };
 		35F24B0429978C800038766F /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
 		35F68E3928EB911200CBED6B /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
@@ -180,8 +184,17 @@
 			children = (
 				35754AEF29BB244B004D3F21 /* ProfileTests.swift */,
 				35754AF129BB2557004D3F21 /* AccountTests.swift */,
+				35754AFA29C9A429004D3F21 /* AccountSummaryViewControllerTests.swift */,
 			);
 			path = AccountSummary;
+			sourceTree = "<group>";
+		};
+		35754AF729C99CBF004D3F21 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				35754AF829C99CFB004D3F21 /* ProfileManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		35F68E3828EB90E400CBED6B /* Onboarding */ = {
@@ -212,6 +225,7 @@
 			children = (
 				35F68E4E28F3AFC000CBED6B /* Cell */,
 				35F68E4D28F3AFAC00CBED6B /* Header */,
+				35754AF729C99CBF004D3F21 /* Networking */,
 				35F68E4728EE6F9700CBED6B /* AccountSummaryViewController.swift */,
 				35754AEB29BB129C004D3F21 /* AccountSummaryViewController+Networking.swift */,
 			);
@@ -342,6 +356,7 @@
 				35F68E4328EE63A600CBED6B /* UIViewController+Utils.swift in Sources */,
 				35754AF629C97498004D3F21 /* SkeletonCell.swift in Sources */,
 				35754AEA29B87D9E004D3F21 /* Date+Utils.swift in Sources */,
+				35754AF929C99CFB004D3F21 /* ProfileManager.swift in Sources */,
 				3555687B28E2889C009403F2 /* LoginView.swift in Sources */,
 				35F68E4128EE5B7000CBED6B /* LocalState.swift in Sources */,
 				35F68E4A28F38A0600CBED6B /* AccountSummaryHeaderView.swift in Sources */,
@@ -370,6 +385,7 @@
 				35754AE129AF31DD004D3F21 /* CurrencyFormatterTests.swift in Sources */,
 				35754AF229BB2557004D3F21 /* AccountTests.swift in Sources */,
 				35754AF029BB244B004D3F21 /* ProfileTests.swift in Sources */,
+				35754AFB29C9A429004D3F21 /* AccountSummaryViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
