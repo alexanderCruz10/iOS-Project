@@ -35,7 +35,7 @@ extension AccountSummaryViewController {
                     completion(.failure(.serverError))
                     return
                 }
-                
+
                 do {
                     let profile = try JSONDecoder().decode(Profile.self, from: data)
                     completion(.success(profile))
@@ -70,11 +70,11 @@ extension AccountSummaryViewController {
                     completion(.failure(.serverError))
                     return
                 }
-                
+
                 do {
                     let decoder = JSONDecoder()
                     decoder.dateDecodingStrategy = .iso8601
-                    
+
                     let accounts = try decoder.decode([Account].self, from: data)
                     completion(.success(accounts))
                 } catch {
@@ -82,5 +82,6 @@ extension AccountSummaryViewController {
                 }
             }
         }.resume()
+
     }
 }
